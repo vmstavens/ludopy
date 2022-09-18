@@ -1,0 +1,58 @@
+\documentclass{llncs}
+\usepackage{llncsdoc}
+\usepackage{biblatex} %Imports biblatex package
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+% \usepackage{wraptable}
+% \usepackage{wrapfig,lipsum,booktabs}
+
+\addbibresource{sample.bib} %Import the bibliography file
+%
+\begin{document}
+
+\title{A Comparative Study on Floating Point vs. Binary Chromosome Representation
+on GA Approaches to Solving the Ludo Problem }
+\author{Victor Melbye Staven}
+\institute{University of Southern Denmark, Campusvej 55, 5230 Odense M, Denmark \\vista17@student.sdu.dk}
+\maketitle
+
+\begin{abstract}
+In this paper two GAs are compared, one produced by this paper with floating point chromosome representation 
+and one produced by a comparative paper with binary chromosome representation.
+This paper's GA is found by testing 6 different configurations with different selection methods 
+and crossover rates. The best found configuration was with a crossover rate of 75\% and using tournament selection. 
+It was concluded that based on the chosen hyperparameters the comparative
+paper produced a GA with a greater avg win rate.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:Introduction}
+\input{sections/introduction/introduction}
+\newpage
+\section{Methods}
+\label{sec:Methods}
+\input{sections/methods/methods}
+
+\section{Results}
+\label{sec:Results}
+\input{sections/results/results}
+
+\section{Analysis and Discussion}
+\label{sec:Analysis and Discussion}
+\input{sections/analysis_and_discussion/analysis_and_discussion}
+
+\section{Conclusion}
+\label{sec:Conclusion}
+\input{sections/conclusion/conclusion}
+
+\section{Acknowledgements}
+\label{sec:Acknowledgements}
+\input{sections/acknowledgements/acknowledgements}
+
+\printbibliography %Prints bibliography
+
+
+
+\end{document}
